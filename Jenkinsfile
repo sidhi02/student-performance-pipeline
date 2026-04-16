@@ -3,9 +3,9 @@ pipeline {
 
     stages {
 
-        stage('Clone Repository') {
+        stage('Checkout Code') {
             steps {
-                git 'https://github.com/sidhi02/student-performance-pipeline.git'
+                git branch: 'main', url: 'https://github.com/sidhi02/student-performance-pipeline.git'
             }
         }
 
